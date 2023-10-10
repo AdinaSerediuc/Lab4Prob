@@ -20,11 +20,7 @@ afisati rezultatul.
         */
         {
             Dulap dulap = new Dulap();
-            dulap.lungime = 2.5;
-            dulap.latime = 1.0;
-            dulap.inaltime = 2.0;
-
-            dulap.volum = dulap.CalculeazaVolum();
+           dulap.volum = dulap.CalculeazaVolum();
 
             PrintDulap(dulap);
             PrintVolum(dulap);
@@ -45,6 +41,13 @@ afisati rezultatul.
             public double latime;
             public double inaltime;
             public double volum;
+
+            public Dulap ()
+            {
+                lungime = 2.5;
+                latime = 1.0;
+                inaltime = 2.0;
+            }
 
             public double CalculeazaVolum()
             {
